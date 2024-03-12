@@ -1,4 +1,3 @@
-# nehad
 
 php artisan migrate:fresh --seed
 
