@@ -1,6 +1,8 @@
 <div>
+
     <div class="container m-auto mt-20">
         <h1 class="text-2xl font-semibold mb-4">All Vemues</h1>
+        <livewire:search-venue />
         <div class="overflow-x-auto">
             <table class="w-full table-auto text-left">
                 <thead class="bg-green-200">

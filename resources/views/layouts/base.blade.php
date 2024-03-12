@@ -9,21 +9,16 @@
         @else
             <title>{{ config('app.name') }}</title>
         @endif
-
-        <!-- Favicon -->
+            <!-- CSRF Token -->
+            <meta name="csrf-token" content="{{ csrf_token() }}">
 		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        {{-- <tallstackui:script />  --}}
+        <tallstackui:script /> 
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-        @livewireStyles
-
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-    </head>
+        @livewireStyles      
 
     <body>
+@include('layouts.nav')
         @yield('body')
         @livewireScripts
     </body>

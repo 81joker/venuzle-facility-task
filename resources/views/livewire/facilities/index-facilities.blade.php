@@ -1,9 +1,7 @@
-@extends('layouts.app')
-
-@section('content')
 
 <div class="container m-auto mt-20">
 <h1 class="text-2xl font-semibold mb-4">All Facilities</h1>
+<livewire:search-facility />
       <div class="overflow-x-auto">
             <table class="w-full table-auto text-left">
                 <thead class="bg-green-200">
@@ -29,6 +27,5 @@
             </table>
         </div>  
 
-            {{ $facilities->links() }}   
+        {{ $facilities->links() }}   
     </div>
-@endsection

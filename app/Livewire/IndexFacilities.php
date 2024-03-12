@@ -15,6 +15,7 @@ class IndexFacilities extends Component
     public function render()
     {
    
-        return view('livewire.facilities.index-facilities', ['facilities'=> Facility::paginate(10)]);
+        return view('livewire.facilities.index-facilities', ['facilities' => Facility::paginate(10)])->layout('layouts.app');;
+
     }
 };
