@@ -42,8 +42,10 @@
                             <div class="mt-2 w-full overflow-hidden rounded-md bg-white">
 
                                 @foreach ($results as $result)
-                                <div class="cursor-pointer py-2 px-3 hover:bg-slate-100">
+                                <div class="cursor-pointer py-2 px-3 hover:bg-slate-200">
+                                    <a href="{{ route('venue.show', $result) }}"  >
                                     <p class="text-sm font-medium text-gray-600">{{ $result->name }}</p>
+                                    </a>
                                 </div>
                                 @endforeach
                             </div>
